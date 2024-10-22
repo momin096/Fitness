@@ -80,7 +80,7 @@
 
 .header {
     /* background: linear-gradient(180deg, #000000 0%, rgba(119, 119, 119, 0.00) 100%); */
-    background: linear-gradient(350deg, rgb(0, 0, 0), rgb(54, 52, 56) 100%);
+    background: linear-gradient(0deg, rgb(0, 0, 0), rgb(54, 52, 56) 100%);
 
 }
 
@@ -290,6 +290,53 @@
     text-align: center;
 }
 
+
+/* Run an Extra Mile */
+
+.extra-mile {
+    background-color: black;
+    padding: 100px;
+}
+
+.extra-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 18px;
+    background: #222;
+    padding: 50px;
+    box-shadow: 5px 5px 20px rgb(36, 35, 35);
+}
+
+.extra-card-text-container {
+    flex: 1;
+}
+
+.extra-card-img-container {
+    width: 50%;
+
+}
+
+.extra-card-img-container img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+.extra-card div>h3 {
+    font-size: 48px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 40px;
+
+}
+
+.extra-card div>p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin-bottom: 50px;
+}
+
 @media screen and (max-width:576px) {
 
     /* Navbar */
@@ -361,10 +408,45 @@
 
     }
 
-    .habits-title{
+    .habits-title {
         font-size: 40px;
-        
+
     }
+
+
+
+    /* Run an extra mile easily */
+    .extra-mile{
+        padding: 20px;
+    }
+    .extra-card{
+        flex-direction: column;
+        gap: 50px;
+        padding: 20px;
+    }
+    .extra-card-text-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .extra-card-img-container {
+        width: 100%;
+    }
+
+    .extra-card div>h3 {
+        font-size: 48px;
+        font-weight: 900;
+        color: white;
+        margin-bottom: 40px;
+    }
+    .extra-card div>h3 {
+        font-size: 38px;
+
+    
+
+    }
+        
+
+
 
 
 }
