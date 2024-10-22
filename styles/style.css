@@ -74,11 +74,12 @@
 
 
 
+
 /* Header */
 
 .header{
     /* background: linear-gradient(180deg, #000000 0%, rgba(119, 119, 119, 0.00) 100%); */
-    background: linear-gradient(0deg,rgb(0, 0, 0),rgb(54, 52, 56) 100%);
+    background: linear-gradient(350deg,rgb(0, 0, 0),rgb(54, 52, 56) 100%);
 
 }
 
@@ -165,6 +166,71 @@
     gap: 30px;
 }
 
+.banner-right{
+    position: relative;
+    
+}
+
+.banner-card-1{
+    position: absolute;
+    top: 140px;
+    right: -90px ;
+    color: white;
+    padding: 15px 30px;
+    border: 1px solid #5f5a5a60;
+    border-radius: 8px;
+    background-color: #4d4a4a60;
+    backdrop-filter: blur(5px);
+}
+
+.banner-card-1-title{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.banner-card-1-description{
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+.banner-card-2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.banner-card-2{
+    position: absolute;
+    right: 250px;
+    bottom: 90px ;
+    color: white;
+    padding: 20px 30px;
+    border: 1px solid #5f5a5a60;
+    border-radius: 8px;
+    background-color: #4d4a4a60;
+    backdrop-filter: blur(5px);
+}
+.banner-card-2 > img{
+    color: var(--primary-color);
+    width: 40px;
+}
+
+.banner-card-2 > div{
+    min-width: 90px;
+}
+
+.banner-card-2-title{
+    font-size: 24px;
+    font-weight: 900;
+    color: white;
+}
+
+.banner-card-2-description{
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
 
 
 @media screen and (max-width:576px) {
