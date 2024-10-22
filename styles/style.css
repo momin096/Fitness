@@ -7,32 +7,33 @@
 
 
 /* Common styles */
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-:root{
-    --primary-color :#E6533C;
-    --secondary-color:#FFFFFF80;
+:root {
+    --primary-color: #E6533C;
+    --secondary-color: #FFFFFF80;
 }
-.font-inter{
+
+.font-inter {
     font-family: "Inter", sans-serif;
 }
 
 
-.font-miama{
+.font-miama {
     font-family: 'Miama', sans-serif;
-                                                
+
 }
 
 
-.max-width{
+.max-width {
     max-width: 1440px;
     margin: 0 auto;
 }
 
-.btn-primary{
+.btn-primary {
     color: white;
     font-size: 18px;
     font-weight: 600;
@@ -43,13 +44,13 @@
     transition: .2s;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: transparent;
     border: 1px solid var(--secondary-color);
 
 }
 
-.btn-secondary{
+.btn-secondary {
     color: white;
     font-size: 18px;
     font-weight: 600;
@@ -60,7 +61,7 @@
     background-color: transparent;
 }
 
-.btn-secondary:hover{
+.btn-secondary:hover {
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color);
 
@@ -77,56 +78,56 @@
 
 /* Header */
 
-.header{
+.header {
     /* background: linear-gradient(180deg, #000000 0%, rgba(119, 119, 119, 0.00) 100%); */
-    background: linear-gradient(350deg,rgb(0, 0, 0),rgb(54, 52, 56) 100%);
+    background: linear-gradient(350deg, rgb(0, 0, 0), rgb(54, 52, 56) 100%);
 
 }
 
 
 /* nav */
 
-.nav{
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 0;
 }
 
-.nav-title{
+.nav-title {
     font-size: 36px;
     font-weight: 800;
     font-style: italic;
     color: var(--primary-color);
 }
 
-#nav-bars{
+#nav-bars {
     display: none;
 }
 
-.nav > ul{
+.nav>ul {
     display: flex;
     gap: 30px;
     border: 1px solid var(--secondary-color);
     border-radius: 35px;
     padding: 3px;
-    
+
 }
 
-.nav > ul > li{
+.nav>ul>li {
     list-style: none;
-    padding:10px 25px;
+    padding: 10px 25px;
 }
 
-.nav > ul > li > a{
+.nav>ul>li>a {
     text-decoration: none;
     color: white;
     font-size: 18px;
     font-weight: 600;
-    
+
 }
 
-.nav > ul > li:first-child{
+.nav>ul>li:first-child {
     background-color: var(--primary-color);
 
     border-radius: 20px;
@@ -135,14 +136,14 @@
 
 /* Banner*/
 
-.banner{
+.banner {
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.banner-title{
+.banner-title {
     font-size: 70px;
     font-weight: 900;
     color: white;
@@ -150,31 +151,32 @@
 
 }
 
-.shape{
+.shape {
     font-size: 100px;
     font-weight: 500;
 }
-.banner-description{
-    font-size:16px ;
+
+.banner-description {
+    font-size: 16px;
     font-weight: 400;
     color: var(--secondary-color);
     margin-bottom: 20px;
 }
 
-.banner-btn{
+.banner-btn {
     display: flex;
     gap: 30px;
 }
 
-.banner-right{
+.banner-right {
     position: relative;
-    
+
 }
 
-.banner-card-1{
+.banner-card-1 {
     position: absolute;
     top: 140px;
-    right: -90px ;
+    right: -90px;
     color: white;
     padding: 15px 30px;
     border: 1px solid #5f5a5a60;
@@ -183,27 +185,28 @@
     backdrop-filter: blur(5px);
 }
 
-.banner-card-1-title{
+.banner-card-1-title {
     font-size: 40px;
     font-weight: 900;
 }
 
-.banner-card-1-description{
+.banner-card-1-description {
     font-size: 13px;
     font-weight: 400;
     color: var(--secondary-color);
 }
 
-.banner-card-2{
+.banner-card-2 {
     display: flex;
     align-items: center;
     gap: 10px;
-    
+
 }
-.banner-card-2{
+
+.banner-card-2 {
     position: absolute;
     right: 250px;
-    bottom: 90px ;
+    bottom: 90px;
     color: white;
     padding: 20px 30px;
     border: 1px solid #5f5a5a60;
@@ -211,78 +214,157 @@
     background-color: #4d4a4a60;
     backdrop-filter: blur(5px);
 }
-.banner-card-2 > img{
+
+.banner-card-2>img {
     color: var(--primary-color);
     width: 40px;
 }
 
-.banner-card-2 > div{
+.banner-card-2>div {
     min-width: 90px;
 }
 
-.banner-card-2-title{
+.banner-card-2-title {
     font-size: 24px;
     font-weight: 900;
     color: white;
 }
 
-.banner-card-2-description{
+.banner-card-2-description {
     font-size: 13px;
     font-weight: 400;
     color: var(--secondary-color);
 }
 
+/* Change Your habits */
+.habits {
+    background-color: black;
+}
+
+.habits-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+}
+
+.habits-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.habits-title {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    padding-top: 80px;
+}
+
+.habits-description {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.habits-card div>img {
+    border-radius: 50%;
+}
+
+.habits-card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+.habits-card-description {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    text-align: center;
+}
 
 @media screen and (max-width:576px) {
 
     /* Navbar */
-    .nav{
+    .nav {
         padding: 20px;
     }
-    #nav-options{
+
+    #nav-options {
         display: none;
     }
 
-    #nav-bars{
+    #nav-bars {
         display: block;
         width: 30px;
     }
 
     /* banner */
-    .banner{
+    .banner {
         flex-direction: column;
-        padding: 20px;
+        padding: 20px 20px 0 20px;
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 50px;
     }
-    .banner-right > img{
+
+    .banner-right>img {
         width: 100%;
     }
-    .banner-card-1{
+
+    .banner-card-1 {
         right: 0px;
         top: 190px;
     }
-    .banner-card-1-title{
+
+    .banner-card-1-title {
         font-size: 18px;
     }
 
-    .banner-card-2{
+    .banner-card-2 {
         right: auto;
         left: 0;
-        bottom: 110px ;
+        bottom: 110px;
     }
-    .banner-card-2-title{
+
+    .banner-card-2-title {
         font-size: 18px;
     }
 
-    .btn-primary{
+    .btn-primary {
         padding: 8px 18px;
     }
-    
-    .btn-secondary{
+
+    .btn-secondary {
         padding: 8px 18px;
+
     }
-    
-    
+
+    /* Change Your Habits */
+
+    .habits-container {
+        padding: 20px;
+    }
+
+    .habits-card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+
+    }
+
+    .habits-title{
+        font-size: 40px;
+        
+    }
+
+
 }
