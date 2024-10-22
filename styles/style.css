@@ -248,5 +248,41 @@
         width: 30px;
     }
 
+    /* banner */
+    .banner{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .banner-title{
+        font-size: 50px;
+    }
+    .banner-right > img{
+        width: 100%;
+    }
+    .banner-card-1{
+        right: 0px;
+        top: 190px;
+    }
+    .banner-card-1-title{
+        font-size: 18px;
+    }
+
+    .banner-card-2{
+        right: auto;
+        left: 0;
+        bottom: 110px ;
+    }
+    .banner-card-2-title{
+        font-size: 18px;
+    }
+
+    .btn-primary{
+        padding: 8px 18px;
+    }
+    
+    .btn-secondary{
+        padding: 8px 18px;
+    }
+    
     
 }
