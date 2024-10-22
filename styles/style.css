@@ -65,6 +65,9 @@
     color: var(--primary-color);
 }
 
+#nav-bars{
+    display: none;
+}
 
 .nav > ul{
     display: flex;
@@ -92,4 +95,28 @@
     background-color: var(--primary-color);
 
     border-radius: 20px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+
+    /* Navbar */
+    .nav{
+        padding: 20px;
+    }
+    #nav-options{
+        display: none;
+    }
+
+    #nav-bars{
+        display: block;
+        width: 30px;
+    }
+    
+    
 }
