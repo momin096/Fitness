@@ -330,7 +330,7 @@
 
 }
 
-.extra-card div > p {
+.extra-card div>p {
     font-size: 14px;
     font-weight: 400;
     color: var(--secondary-color);
@@ -339,24 +339,26 @@
 }
 
 /* Meet Out team */
-.team{
+.team {
     background-color: black;
-    
+
     padding: 20px;
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.team-group{
+.team-group {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2 , 1fr);
+    grid-template-rows: repeat(2, 1fr);
     row-gap: 20px;
     gap: 20px;
     background-color: #222;
     padding: 20px;
     border-radius: 30px;
 }
-.team-title{
+
+.team-title {
     font-size: 48px;
     font-weight: 900;
     color: white;
@@ -364,24 +366,82 @@
     margin-bottom: 10px;
 }
 
-.team-description{
+.team-description {
     font-size: 14px;
     font-weight: 400;
-    color: var(--secondary-color); 
+    color: var(--secondary-color);
     text-align: center;
     margin-bottom: 50px;
 }
 
-.team-group > div{
+.team-group>div {
     height: 250px;
     overflow: hidden;
     border-radius: 20px;
     position: relative;
 }
 
-.team-group div > img{
+.team-group div>img {
     width: 100%;
     border-radius: 20px;
+}
+
+/* Footer */
+.footer {
+    background: rgb(12, 11, 11);
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.footer-left>h2 {
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.footer-left>p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    max-width: 450px;
+}
+
+.footer h4 {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.footer-container>div {
+    display: grid;
+    grid-template-columns: repeat(3, 50% 25% 25%);
+}
+
+
+#line {
+    margin-top: 60px;
+    border: 1px solid rgba(90, 83, 83, 0.486);
+    
+}
+
+.footer-container>p {
+    color: #FFFFFF80;
+    text-align: center;
+    margin-top: 50px;
 }
 
 @media screen and (max-width:576px) {
@@ -463,18 +523,21 @@
 
 
     /* Run an extra mile easily */
-    .extra-mile{
+    .extra-mile {
         padding: 20px;
     }
-    .extra-card{
+
+    .extra-card {
         flex-direction: column;
         gap: 50px;
         padding: 20px;
     }
-    .extra-card-text-container{
+
+    .extra-card-text-container {
         display: flex;
         flex-direction: column;
     }
+
     .extra-card-img-container {
         width: 100%;
     }
@@ -485,18 +548,31 @@
         color: white;
         margin-bottom: 40px;
     }
+
     .extra-card div>h3 {
         font-size: 38px;
     }
-        
+
 
     /* Meet Out team */
 
-    .team-group{
+    .team-group {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2 , 1fr);
+        grid-template-rows: repeat(2, 1fr);
 
+    }
+
+    /* Footer */
+    .footer-container>div {
+        padding: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+
+    #line{
+        width: 95%;
+        margin: 0 auto;
     }
 
 }
