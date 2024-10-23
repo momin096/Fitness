@@ -305,7 +305,7 @@
     border-radius: 18px;
     background: #222;
     padding: 50px;
-    box-shadow: 5px 5px 20px rgb(36, 35, 35);
+
 }
 
 .extra-card-text-container {
@@ -327,7 +327,6 @@
     font-weight: 900;
     color: white;
     margin-bottom: 40px;
-
 }
 
 .extra-card div>p {
@@ -349,8 +348,6 @@
     display: flex;
     align-items: center;
 }
-
-
 
 .bmi-chart {
     border-collapse: collapse;
@@ -474,12 +471,12 @@ td {
 
 /* Join gym */
 
-.join-gym-container{
+.join-gym-container {
     background-color: black;
     padding: 100px;
 }
 
-.join-gym-container > div{
+.join-gym-container>div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -494,24 +491,24 @@ td {
     width: 50%;
 }
 
-.image{
+.image {
     width: 50%;
 }
 
 
-.join-gym-container div > h2 {
+.join-gym-container div>h2 {
     font-size: 48px;
     margin-bottom: 30px;
 }
 
-.join-gym-container div > p {
+.join-gym-container div>p {
     font-size: 18px;
     margin-bottom: 20px;
     color: var(--secondary-color);
 }
 
 
-.join-gym-container div ul > li {
+.join-gym-container div ul>li {
     font-size: 18px;
     padding-left: 20px;
     position: relative;
@@ -593,6 +590,8 @@ a {
     margin-top: 50px;
 }
 
+
+/* Mobile device responsive */
 @media screen and (max-width:576px) {
 
     /* Navbar */
@@ -749,26 +748,26 @@ a {
 
 
     /* Join gym */
-    .join-gym-container > div{
+    .join-gym-container>div {
         flex-direction: column;
         padding: 20px;
-       
+
     }
 
-    .join-gym-container{
+    .join-gym-container {
 
         padding: 20px;
     }
-    
-    
+
+
     .join-left {
         width: 100%;
     }
-    
-    .image{
+
+    .image {
         width: 100%;
     }
-    
+
 
     /* Footer */
     .footer-container>div {
@@ -781,5 +780,131 @@ a {
         width: 95%;
         margin: 0 auto;
     }
+
+}
+
+
+
+
+/* Tablet device responsive */
+
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .nav {
+        padding: 30px;
+    }
+
+    .nav>ul {
+        gap: 5px;
+    }
+
+    .nav>ul>li {
+        padding: 10px 15px;
+    }
+    .banner{
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Change Your habits */
+
+    .habits {
+        padding: 20px;
+    }
+    .habits-card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    
+    }
+
+    /* Run an extra mile */ 
+    .extra-mile{
+        padding: 20px;
+    }
+    
+.extra-card {
+    padding: 20px;
+}
+
+.extra-card div>h3 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+.extra-card div>p {
+    margin-bottom: 30px;
+
+}
+
+/* BMI calculator */
+
+.bmi-container {
+    padding: 40px;
+}
+
+.bmi {
+    flex-direction: column;
+    gap: 50px;
+}
+
+.bmi-chart-container {
+    width: 100%;
+}
+
+.bmi-right {
+    width: 100%;
+}
+
+
+/* Meet Out team */
+.team-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
+
+}
+
+#img-4{
+    transform: scale(1.6);
+}
+
+
+/* Join Gym */
+
+.join-gym-container{
+    padding: 20px;
+}
+
+.join-gym-container>div {
+    flex-direction: column;
+    padding: 20px;
+    gap: 40px;
+}
+.join-left {
+    width: 100%;
+}
+
+.image {
+    width: 100%;
+}
+
+
+/* footer */
+.footer{
+    padding: 40px;
+}
+
+.footer-container>div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.footer-left{
+    grid-column: span 2;
+}
+
+
 
 }
