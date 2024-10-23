@@ -102,9 +102,9 @@
         <!--    BMI CALCULATOR -->
 
         <section class="bmi-container">
-            <div class="max-width">
+            <div class="max-width bmi">
                 <div class="bmi-chart-container">
-                    <h3 >BMI Calculator Chart</h3>
+                    <h3 class="bmi-title">BMI Calculator Chart</h3>
                     <table class="bmi-chart">
                         <tr>
                             <th>BMI</th>
@@ -128,7 +128,31 @@
                         </tr>
                     </table>
                 </div>
-                
+
+                <div class="bmi-right">
+                    <h3 class="bmi-title">Calculate your BMI</h3>
+                    <p class="bmi-description">We believe fitness should be accessible to everyone, everywhere,
+                      <br>  regardless of income or access to a gym. </p>
+
+                    <div class="bmi-calculate-container">
+                        <input class="input" type="number" name="" id="" placeholder="Height/Cm">
+                        <input class="input" type="number" name="" id="" placeholder="Weight/Kg">
+                        <input class="input" type="number" name="" id="" placeholder="Age">
+                        <select name="Sex" id="" class="input" >
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="" disabled selected>Sex</option>
+                        </select>
+                        <select name="Activity" id="full-width" class="input">
+                            <option value="">Light</option>
+                            <option value="">Medium</option>
+                            <option value="">Extreme</option>
+                            <option value="" disabled selected>Select an activity factor</option>
+                        </select>
+                    </div>
+                    <button id="btn-calculate" class="btn-primary">Calculate</button>
+                </div>
+
             </div>
         </section>
 

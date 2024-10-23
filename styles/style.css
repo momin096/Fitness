@@ -340,48 +340,94 @@
 
 /* BMI CALCULATOR */
 
-    .bmi-container{
-        background: #222;
-        padding: 100px;
-    }
+.bmi-container {
+    background: #222;
+    padding: 100px;
+}
+
+.bmi {
+    display: flex;
+    align-items: center;
+}
 
 
 
-    .bmi-chart{
-        border-collapse: collapse;
-    }
+.bmi-chart {
+    border-collapse: collapse;
+}
 
-    .bmi-chart-container > h3{
-        font-size: 32px;
-        font-weight: 900;
-        color: white;
-        margin-bottom: 40px;
-    }
+.bmi-chart-container {
+    width: 50%;
+}
 
-    th ,td {
-        border: 1px solid var(--secondary-color);
-        padding: 30px;
-        text-align: left;
+.bmi-title {
+    font-size: 32px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 40px;
+}
 
-    }
+th,
+td {
+    border: 1px solid var(--secondary-color);
+    padding: 30px;
+    text-align: left;
 
-    th{
-        color: white;
-        font-weight: 500;
-        font-size: 18px;
+}
 
-    }
+th {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
 
-    td{
-        color: var(--secondary-color);
-        font-size: 16px;
-        font-weight: 400;
-    }
+}
+
+td {
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.bmi-right {
+    width: 50%;
+}
+
+
+.bmi-calculate-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+#full-width {
+    grid-column: span 2;
+}
+
+.bmi-description {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+
+.input {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #474747;
+    color: var(--secondary-color);
+    border: none;
+}
+
+#btn-calculate {
+    margin-top: 50px;
+}
+
 
 /* Meet Out team */
 .team {
     background-color: black;
-
     padding: 20px;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -476,7 +522,7 @@ a {
 #line {
     margin-top: 60px;
     border: 1px solid rgba(90, 83, 83, 0.486);
-    
+
 }
 
 .footer-container>p {
@@ -594,6 +640,40 @@ a {
         font-size: 38px;
     }
 
+    /* BMI calculator */
+
+    .bmi-container {
+        padding: 20px;
+        padding-top: 50px;
+    }
+
+    .bmi {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 50px;
+    }
+
+    .bmi-chart-container {
+        width: 100%;
+    }
+
+    .bmi-right {
+        width: 100%;
+    }
+
+    .bmi-calculate-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+
 
     /* Meet Out team */
 
@@ -611,7 +691,7 @@ a {
         gap: 40px;
     }
 
-    #line{
+    #line {
         width: 95%;
         margin: 0 auto;
     }
